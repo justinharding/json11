@@ -28,7 +28,7 @@ target_compile_options(json11
   PRIVATE -fPIC -fno-rtti -fno-exceptions -Wall)
 
 if(MSVC)
-    target_compile_options(json11 PRIVATE /W4 /WX -Werror)
+    target_compile_options(json11 PRIVATE /W4 /WX)
 else()
     target_compile_options(json11 PRIVATE /W4 /WX -Wextra -Werror)
 endif()
